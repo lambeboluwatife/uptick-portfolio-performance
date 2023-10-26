@@ -1,9 +1,9 @@
-import weather from "../images/weather.png";
-import finalSpace from "../images/finalSpace.jpg";
-import LBDmovies from "../images/LBDmovies.png";
-import gkai from "../images/gkai.jpg";
-import camp from "../images/camp.jpg";
-import eventrite from "../images/show.jpg";
+import weather from "../images/weather.webp";
+import finalSpace from "../images/finalSpace.webp";
+import LBDmovies from "../images/LBDmovies.webp";
+import gkai from "../images/gkai.webp";
+import camp from "../images/camp.webp";
+import eventrite from "../images/show.webp";
 
 const portfolios = [
   {
