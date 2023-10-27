@@ -17,6 +17,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Skills = () => {
+  console.log("Skills is loading");
+
   return (
     <div className="grid">
       <div className="skills">

@@ -1,17 +1,19 @@
 import { Routes, Route } from "react-router-dom";
-import { useState } from "react";
+import { useState, lazy, Suspense } from "react";
 
 import "./App.css";
-import Home from "./components/Home";
 import Nav from "./components/Nav";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faRemove } from "@fortawesome/free-solid-svg-icons";
 import { useLocation } from "react-router-dom";
 import SideNav from "./components/SideNav";
+import Loading from "./components/Loading";
+
+const Home = lazy(() => import("./components/Home"));
+const About = lazy(() => import("./components/About"));
+const Skills = lazy(() => import("./components/Skills"));
+const Portfolio = lazy(() => import("./components/Portfolio"));
+const Contact = lazy(() => import("./components/Contact"));
 
 const App = () => {
   const location = useLocation();
@@ -46,13 +48,15 @@ const App = () => {
           onClick={toggleSideNav}
         />
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <Suspense fallback={<Loading />}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </Suspense>
       </div>
     </div>
   );

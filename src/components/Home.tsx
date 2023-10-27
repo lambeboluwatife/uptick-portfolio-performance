@@ -1,4 +1,6 @@
 const Home = () => {
+  console.log("Home is loading");
+
   return (
     <div className="home">
       <h1 className="heading" data-testid="test-1">

@@ -263,3 +263,12 @@ body {
 .grid-5 {
   grid-template-columns: repeat(5, 1fr);
 }
+
+.loading {
+  text-align: center;
+}
+
+.loading img {
+  position: absolute;
+  margin-top: 20rem;
+}
