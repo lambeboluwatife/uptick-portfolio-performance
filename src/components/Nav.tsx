@@ -1,5 +1,8 @@
+import { memo } from "react";
 import { useLocation } from "react-router";
 const Nav = () => {
+  console.log("Nav is loading");
+
   const location = useLocation();
 
   let navStyle = "";
@@ -20,20 +23,30 @@ const Nav = () => {
       <h6>Lambe Boluwatife Daniel</h6>
       <ul>
         <li>
-          <a href="/">HOME</a>
+          <a href="/" aria-label="Link to home page">
+            HOME
+          </a>
         </li>
         <li>
-          <a href="/about">ABOUT</a>
+          <a href="/about" aria-label="Link to about page">
+            ABOUT
+          </a>
         </li>
         <li>
-          <a href="/skills">SKILLS</a>
+          <a href="/skills" aria-label="Link to skills page">
+            SKILLS
+          </a>
         </li>
 
         <li>
-          <a href="/portfolio">PORTFOLIO</a>
+          <a href="/portfolio" aria-label="Link to portfolio page">
+            PORTFOLIO
+          </a>
         </li>
         <li>
-          <a href="/contact">CONTACT</a>
+          <a href="/contact" aria-label="Link to contact page">
+            CONTACT
+          </a>
         </li>
       </ul>
       <div className="social-links">
@@ -42,6 +55,7 @@ const Nav = () => {
             rel="noreferrer"
             href="https://twitter.com/Danibholie"
             target="_blank"
+            aria-label="Link to twitter profile"
           >
             <i className="fab fa-twitter"></i>
           </a>
@@ -51,6 +65,7 @@ const Nav = () => {
             rel="noreferrer"
             href="https://www.instagram.com/lbd_codes/"
             target="_blank"
+            aria-label="Link to instagram profile"
           >
             <i className="fab fa-instagram"></i>
           </a>
@@ -60,6 +75,7 @@ const Nav = () => {
             rel="noreferrer"
             href="https://www.linkedin.com/in/lambe-boluwatife-870b6136"
             target="_blank"
+            aria-label="Link to linkedin profile"
           >
             <i className="fab fa-linkedin"></i>
           </a>
@@ -68,7 +84,8 @@ const Nav = () => {
           <a
             rel="noreferrer"
             href="https://github.com/lambeboluwatife"
-            target="_"
+            target="_blank"
+            aria-label="Link to github profile"
           >
             <i className="fab fa-github"></i>
           </a>
@@ -78,4 +95,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default memo(Nav);

@@ -10,6 +10,8 @@ interface PortfolioData {
 }
 
 const Portfolio = () => {
+  console.log("Portfolio is loading");
+
   return (
     <div className="portfolio">
       <h1 className="heading">PORTFOLIO</h1>
@@ -21,7 +23,12 @@ const Portfolio = () => {
             <h3>{portfolio.name}</h3>
             <h6>{portfolio.skills}</h6>
             <h6>{portfolio.desc}</h6>
-            <img src={portfolio.image} alt={portfolio.name} />
+            <img
+              src={portfolio.image}
+              alt={portfolio.name}
+              width="80%"
+              height="50%"
+            />
             <div className="link">
               <a href={portfolio.live} target="_blank" rel="noreferrer">
                 Live Site

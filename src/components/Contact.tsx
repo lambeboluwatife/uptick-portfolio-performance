@@ -3,6 +3,8 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Contact = () => {
+  console.log("Contact is loading");
+
   return (
     <>
       <div className="contact">

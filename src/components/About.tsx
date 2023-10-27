@@ -1,6 +1,8 @@
 import Resume from "../assets/BoluwatifeLambe_2.pdf";
 
 const About = () => {
+  console.log("About is loading");
+
   return (
     <div className="about">
       <div className="grid">
@@ -24,8 +26,8 @@ const About = () => {
             </li>
           </ul>
 
-          <h3>PROFESSIONAL PROFILE</h3>
-          <h6>
+          <h2>PROFESSIONAL PROFILE</h2>
+          <h3>
             I am a Web Developer skilled in HTML, CSS, JavaScript, NodeJS,
             Bootstrap, ExpressJS, EJS, and MongoDB. My love for video games, and
             the idea of being able to build applications lured me into
@@ -34,7 +36,7 @@ const About = () => {
             pleasure in teaching and imparting people with my wealth of
             knowledge. <br /> When I'm not coding or studying, I spend my
             leisure time playing games, watching movies, and series.
-          </h6>
+          </h3>
 
           <a href={Resume} rel="noreferrer" target="_blank">
             DOWNLOAD RESUME AS PDF FORMAT
