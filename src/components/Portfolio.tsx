@@ -1,14 +1,5 @@
 import portfolios from "../data/portfolio";
 
-interface PortfolioData {
-  name: string;
-  skills: string;
-  image: string;
-  live: string;
-  source: string;
-  id: number;
-}
-
 const Portfolio = () => {
   console.log("Portfolio is loading");
 

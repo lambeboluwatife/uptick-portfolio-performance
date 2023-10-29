@@ -1,8 +1,6 @@
 import { memo } from "react";
 import { useLocation } from "react-router";
 const Nav = () => {
-  console.log("Nav is loading");
-
   const location = useLocation();
 
   let navStyle = "";
