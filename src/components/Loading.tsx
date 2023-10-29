@@ -7,6 +7,7 @@ const Loading = () => {
         alt="loading image"
         width="30px"
         height="30px"
+        loading="lazy"
       />
     </div>
   );

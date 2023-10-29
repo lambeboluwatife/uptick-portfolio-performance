@@ -28,6 +28,7 @@ const Portfolio = () => {
               alt={portfolio.name}
               width="80%"
               height="50%"
+              loading="lazy"
             />
             <div className="link">
               <a href={portfolio.live} target="_blank" rel="noreferrer">

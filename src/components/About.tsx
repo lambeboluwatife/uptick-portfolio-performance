@@ -1,8 +1,6 @@
 import Resume from "../assets/BoluwatifeLambe_2.pdf";
 
 const About = () => {
-  console.log("About is loading");
-
   return (
     <div className="about">
       <div className="grid">
